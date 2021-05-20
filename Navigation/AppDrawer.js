@@ -76,7 +76,7 @@ export function AppDrawer(props) {
                                 size={size}
                                 />
                             )}
-                            label="Profile"
+                            label="Library"
                             onPress={() => {props.navigation.navigate('Profile')}}
                         />
                         <DrawerItem 
@@ -87,7 +87,7 @@ export function AppDrawer(props) {
                                 size={size}
                                 />
                             )}
-                            label="Bookmarks"
+                            label="Website"
                             onPress={() => {props.navigation.navigate('BookmarkScreen')}}
                         />
                         <DrawerItem 
