@@ -6,7 +6,10 @@ import { useTheme, useNavigation } from '@react-navigation/native';
 import Book from './Components/Book'
 
 
-
+const bookDetails = () => {
+  // navigation.push('Details', { props });
+  navigation.navigate("Details")
+};
 
 const Home = ({navigation}) => {
   const [selectedId, setSelectedId] = useState(null);
@@ -32,50 +35,50 @@ const getGreeting = () => {
 
       <ScrollView scrollEventThrottle={16}>
       <View>
-        <Text> {getGreeting()}</Text>
+        <Text> Reading </Text>
       </View>
       <View style={{height: 180, marginTop: 20, marginLeft: 5, backgroundColor: 'white'}}>
         <ScrollView horizontal={true} showsHorizontalScrollIndicator={true}>
 
-          <Book imageuri={'https://www.asme.org/getmedia/c2c8ea5a-b690-4ba7-92bb-34bd1432862b/book_guide_hero_books.png?width=300&height=315&ext=.png'} bookName='Book 1'/>
-          <Book imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 2'/>
-          <Book imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 3'/>
-          <Book imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 4'/>
-          <Book imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 5'/>
+          <Book navigation={navigation} imageuri={'https://www.asme.org/getmedia/c2c8ea5a-b690-4ba7-92bb-34bd1432862b/book_guide_hero_books.png?width=300&height=315&ext=.png'} bookName='Book 1'/>
+          <Book navigation={navigation} imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 2'/>
+          <Book navigation={navigation} imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 3'/>
+          <Book navigation={navigation} imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 4'/>
+          <Book navigation={navigation} imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 5'/>
 
 
         </ScrollView>
       </View>
 
       <View>
-        <Text> {getGreeting()}</Text>
+        <Text> Completed</Text>
       </View>
 
       <View style={{height: 180, marginTop: 20, marginLeft: 5, backgroundColor: 'white'}}>
         <ScrollView horizontal={true} showsHorizontalScrollIndicator={true}>
 
-          <Book imageuri={'https://www.asme.org/getmedia/c2c8ea5a-b690-4ba7-92bb-34bd1432862b/book_guide_hero_books.png?width=300&height=315&ext=.png'} bookName='Book 1'/>
-          <Book imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 2'/>
-          <Book imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 3'/>
-          <Book imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 4'/>
-          <Book imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 5'/>
+        <Book navigation={navigation} imageuri={'https://www.asme.org/getmedia/c2c8ea5a-b690-4ba7-92bb-34bd1432862b/book_guide_hero_books.png?width=300&height=315&ext=.png'} bookName='Book 1'/>
+          <Book navigation={navigation} imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 2'/>
+          <Book navigation={navigation} imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 3'/>
+          <Book navigation={navigation} imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 4'/>
+          <Book navigation={navigation} imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 5'/>
 
 
         </ScrollView>
       </View>
 
       <View>
-        <Text> {getGreeting()}</Text>
+        <Text> Whishlist</Text>
       </View>
 
       <View style={{height: 180, marginTop: 20, marginLeft: 5, backgroundColor: 'white'}}>
         <ScrollView horizontal={true} showsHorizontalScrollIndicator={true}>
 
-          <Book imageuri={'https://www.asme.org/getmedia/c2c8ea5a-b690-4ba7-92bb-34bd1432862b/book_guide_hero_books.png?width=300&height=315&ext=.png'} bookName='Book 1'/>
-          <Book imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 2'/>
-          <Book imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 3'/>
-          <Book imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 4'/>
-          <Book imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 5'/>
+        <Book navigation={navigation} imageuri={'https://www.asme.org/getmedia/c2c8ea5a-b690-4ba7-92bb-34bd1432862b/book_guide_hero_books.png?width=300&height=315&ext=.png'} bookName='Book 1'/>
+          <Book navigation={navigation} imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 2'/>
+          <Book navigation={navigation} imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 3'/>
+          <Book navigation={navigation} imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 4'/>
+          <Book navigation={navigation} imageuri={'https://reactnative.dev/img/tiny_logo.png'} bookName='Book 5'/>
 
 
         </ScrollView>

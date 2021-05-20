@@ -32,10 +32,10 @@ const Tabs = () => (
         }}
       />
       <Tab.Screen
-        name="Library"
+        name="Details"
         component={DetailsStackScreen}
         options={{
-          tabBarLabel: 'Library',
+          tabBarLabel: 'Details',
           tabBarColor: '#0fadd9',
           tabBarIcon: ({ color }) => (
             <Icon name="ios-notifications" color={color} size={26} />
@@ -85,6 +85,7 @@ const HomeStackScreen = ({navigation}) => (
             <Icon.Button name="ios-menu" size={25} backgroundColor="#0fccd9" onPress={() => navigation.openDrawer()}></Icon.Button>
         )
         }} />
+
 </HomeStack.Navigator>
 );
 
