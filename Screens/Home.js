@@ -3,7 +3,7 @@ import { View, Text, Button, Image, StyleSheet, StatusBar, FlatList, TouchableOp
 ScrollView } from 'react-native';
 import { useTheme, useNavigation } from '@react-navigation/native';
 
-import Book from './Components/Book'
+import Book from '../Components/Book'
 
 
 const bookDetails = () => {
